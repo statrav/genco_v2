@@ -12,7 +12,8 @@ This paper makes the following contributions:
 All code required to reproduce the experiments in the paper is provided.
 
 ### Step 1: Generating Ground Truth
-No existing text-to-image retrieval datasets contain ground truth part-of-speech (POS) annotations for images. Use `dataset_generation.py` to generate ground truth. Pre-generated ground truth files are provided as `coco.csv` and `flickr.csv` in the `./data/gt/` directory. Download these files and save them in the `data` folder.
+No existing text-to-image retrieval datasets contain ground truth part-of-speech (POS) annotations for images. Use `dataset_generation.py` to generate ground truth.\ 
+Pre-generated ground truth files are provided as `coco.csv` and `flickr.csv` in the `./data/gt/` directory. Download these files and save them in the `data` folder.
 
 ### Step 2: Data Preparation
 Ensure the `./data` directory contains the following:
@@ -30,15 +31,15 @@ Generate the FAISS index for image retrieval. Code and `index.csv` information a
 Use `main.py` to evaluate the performance of GenCo.
 ![final_pipeline](https://github.com/user-attachments/assets/608d5c12-7290-4254-b559-5c59641b53d0)
 #### Note
-The captioning model used in the GenCo pipeline is ExpansionNet_v2, which currently achieves state-of-the-art (SoTA) performance. 
-Clone the model into the `ExpansionNet_v2` folder:
+The captioning model used in the GenCo pipeline is ExpansionNet_v2, which currently achieves state-of-the-art (SoTA) performance. \
+Clone the model into the `ExpansionNet_v2` folder:\
 git clone https://github.com/jchenghu/ExpansionNet_v2.git
 
 ### Step 5: Verifying VLM POS Imbalance
 Reproduce the experiments verifying the POS imbalance issue in VLMs, as mentioned in Contribution 1, using the code provided in the `motivation` folder.
 
 ## Directory Structure
-'''
+.
 ├── .git/
 ├── data/
 │ ├── gt/
@@ -55,7 +56,6 @@ Reproduce the experiments verifying the POS imbalance issue in VLMs, as mentione
 ├── motivation/
 ├── dataset_generation.py
 └── main.py
-'''
 
 ## References
 For detailed instructions on running the code and experiments, please refer to the respective files and directories.
