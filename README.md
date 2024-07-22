@@ -1,8 +1,6 @@
 # GenCo: Generative Retrieval with CoT Prompting
 
 GenCo stands for Generative Retrieval with CoT prompting, a method designed to overcome the limitations of text-to-image retrieval inherent in Vision-Language Models (VLMs) by leveraging Large Language Models (LLMs) for generative retrieval.
-![final_pipeline](https://github.com/user-attachments/assets/608d5c12-7290-4254-b559-5c59641b53d0)
-
 
 ## Contributions
 This paper makes the following contributions:
@@ -30,6 +28,7 @@ Generate the FAISS index for image retrieval. Code and `index.csv` information a
 
 ### Step 4: Running GenCo
 Use `main.py` to evaluate the performance of GenCo.
+![final_pipeline](https://github.com/user-attachments/assets/608d5c12-7290-4254-b559-5c59641b53d0)
 #### Note
 The captioning model used in the GenCo pipeline is ExpansionNet_v2, which currently achieves state-of-the-art (SoTA) performance. 
 Clone the model into the `ExpansionNet_v2` folder:
